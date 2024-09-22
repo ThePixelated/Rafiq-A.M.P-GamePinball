@@ -7,7 +7,9 @@ public class ScoreManager : MonoBehaviour
     // kita buat variabel score untuk menyimpan skor
     public float score;
 
-    private void Start()
+
+
+    private void Awake()
     {
         // reset skor ke 0 tiap game dimulai dari awal
         ResetScore();
@@ -21,6 +23,7 @@ public class ScoreManager : MonoBehaviour
 
     public void ResetScore()
     {
+        Debug.Log("Tol");
         // kembalikan skor ke 0 untuk situasi tertentu
         score = 0;
     }

@@ -25,9 +25,6 @@ public class SwitchController : MonoBehaviour
     private void Start()
     {
         _renderer = GetComponent<Renderer>();
-        scoreManager = GetComponent<ScoreManager>();
-
-        Debug.Log(state);
 
         Set(false);
 
@@ -60,6 +57,8 @@ public class SwitchController : MonoBehaviour
 
     private void Toggle()
     {
+        scoreManager.AddScore(score);
+
         if (state == SwitchState.On)
         {
             Set(false);
@@ -68,8 +67,6 @@ public class SwitchController : MonoBehaviour
         {
             Set(true);
         }
-
-        scoreManager.AddScore(score);
     }
 
     private IEnumerator Blink(int times)
