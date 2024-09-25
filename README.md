@@ -1,6 +1,2 @@
-# RE-WORK
-TODO:
-- Switch fix
-- Scene fix
-- Sounds fIx
-- Lag fix
+# RE-WORK IS DONE
+Still managing the build file - [ON PROGRESS]
