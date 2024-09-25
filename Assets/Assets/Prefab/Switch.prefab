@@ -123,4 +123,6 @@ MonoBehaviour:
   offMaterial: {fileID: 2100000, guid: fb085e57e26cfcd48a145628aca39ad5, type: 2}
   onMaterial: {fileID: 2100000, guid: 11c9102dec439a840ba72f00eee6590e, type: 2}
   scoreManager: {fileID: 5358331391111139825, guid: eea561ef08429fa439b2df5db59c07cc, type: 3}
+  audioManager: {fileID: -7159969612263219778, guid: b325616f90c2469479ad01a1f48967a3, type: 3}
+  vfxManager: {fileID: 7266837252234313197, guid: 4be958f277ee19740bf0c1a02bbec66f, type: 3}
   score: 10

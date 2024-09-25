@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.VFX;
 
 public class SwitchController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class SwitchController : MonoBehaviour
     public Material offMaterial;
     public Material onMaterial;
     public ScoreManager scoreManager;
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
     public float score;
 
     private SwitchState state;
@@ -36,6 +39,8 @@ public class SwitchController : MonoBehaviour
         if (other == bola)
         {
             Toggle();
+            audioManager.PlaySFX(other.transform.position);
+            vfxManager.PlayVFX(other.transform.position);
         }
     }
 
